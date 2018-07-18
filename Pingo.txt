@@ -1,0 +1,47 @@
+//back ground
+background(38, 38, 38);
+image(getImage("cute/StoneBlock"),0,74);
+image(getImage("cute/StoneBlock"),100,74);
+image(getImage("cute/StoneBlock"),212,74);
+image(getImage("cute/StoneBlock"),311,74);
+fill(245, 245, 245);
+rect(-120, 209, 617, 208, 266);
+fill(8, 8, 8);
+ellipse(200, 180, 100, 108);
+
+fill(23, 23, 23);
+ellipse(200, 116, 64, 55);
+//face
+fill(255, 255, 255);
+stroke(255, 255, 255);
+ellipse(192, 121, 37, 36);
+ellipse(209, 121, 37, 36);
+fill(13, 13, 13);
+ellipse(214, 119, 10, 10);
+ellipse(189, 119, 10, 10);
+fill(255, 119, 0);
+triangle(206, 121, 202, 142, 196, 121);
+//body
+fill(255, 255, 255);
+ellipse(200, 180, 62, 91);
+//Foot
+fill(255, 111, 0);
+triangle(219, 245, 251, 241, 220, 231);
+triangle(180, 246, 179, 231, 150, 240);
+//Text
+fill(255, 250, 255);
+ellipse(266,46, 105, 68);
+fill(255, 0, 0);
+var f = createFont("cursive");
+textFont(f);
+text("Hello I'm Private",240, 35, 61, 100);
+image(getImage("space/star"),71,51,25, 27);
+image(getImage("space/star"),19,71,25, 27);
+image(getImage("space/star"),152,44,25, 28);
+image(getImage("space/star"),101,10,24, 27);
+image(getImage("space/star"),186,10,24, 27);
+image(getImage("space/star"),19,12,25, 27);
+image(getImage("space/star"),255,84,25, 27);
+image(getImage("space/star"),342,17,25, 27);
+image(getImage("space/star"),325,75,25, 27);
+
