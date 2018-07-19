@@ -1,2 +1,2 @@
-# nyusu
-Pinguin
+# Khan-Academy
+Project
