@@ -1,0 +1,18 @@
+﻿fill(77, 4, 4);
+rect(148, 65, 129, 106);
+fill(255, 222, 122);
+rect(162, 107, 103, 89);
+fill(195, 207, 200);
+ellipse(188, 127, 10, 10);
+ellipse(240, 127, 10, 10);
+image(getImage("cute/GemOrange"), 208, 138, 15, 20);
+fill(26, 26, 26);
+rect(190, 163, 49, 18);
+fill(240, 240, 240);
+ellipse(65, 39, 128, 67);
+fill(242, 133, 83);
+
+var f = createFont("cursive");
+textFont(f);
+
+text("Oh..,I'm very hungry", 14, 31, 192, 141);
