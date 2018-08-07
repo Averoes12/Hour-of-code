@@ -20,12 +20,38 @@ else
 fi
 
  echo "Silahkan pilih menu anda"
-for menu in sate=25k bakso=10k ayam=20k mie=9k;
+for menu in sate=25k bakso=10k ayam=20k mie=10k;
 do
   echo "$menu";
 done
- echo "masukkan pilihan "
-read pilihan
+ echo "Silahkan pilih "
+ read makanan
 
- echo "anda telah memilih $pilihan"
- echo "selamat menikmati"
+case $makanan in
+
+sate) echo "Anda memilih $makanan,seharga 25k"
+;;
+bakso|mie) echo "Anda telah memilih $makanan,seharga 10k"
+;;
+ayam) echo "Anda telah memilih $makanan,seharga 20k"
+esac
+ 
+#Gorengan
+ echo "Tersedia gorengan juga"
+for gorengan in bakwan risol tahu tempe tahu_pedes bakwan_jagung
+do 
+ echo "$gorengan"
+done
+ echo "Pilih gorengan"
+ read pilihan
+
+case $gorengan in
+ 
+bakwan|tempe|tahu) echo "$pilihan 500"
+;;
+tahu_pedes|bakwan_jagung) echo "$pilihan 1000"
+;;
+esac
+
+echo "Selamat menikmati"
+echo "Harap bayar dengan uang pas"
