@@ -4,40 +4,40 @@ MENIT=`date +%M`
 JAM=`date +%H`
 echo "what's your name ?"
 read name 
-echo "salam kenal" $name
+echo "Nice to meet you " $name
 
 
-echo "Silahkan Masukkan password :"
+echo "Please enter your password :"
 read password
 
 if [ "$password" == "daff" ];
 then
- echo "password benar"
- echo "anda telah login pada $JAM : $MENIT"
+ echo "Correct password"
+ echo "You have logged in at $JAM : $MENIT"
 else
- echo "password salah"
- echo "silahan coba lagi"
+ echo "Incorrect password"
+ echo "Please try again"
 fi
 
- echo "Silahkan pilih menu anda"
+ echo "Please choose your menu"
 for menu in sate=25k bakso=10k ayam=20k mie=10k;
 do
   echo "$menu";
 done
- echo "Silahkan pilih "
+ echo "Please choose "
  read makanan
 
 case $makanan in
 
-sate) echo "Anda memilih $makanan,seharga 25k"
+sate) echo "You have choosed $makanan,price 25k"
 ;;
-bakso|mie) echo "Anda telah memilih $makanan,seharga 10k"
+bakso|mie) echo "You have choosed $makanan,price 10k"
 ;;
-ayam) echo "Anda telah memilih $makanan,seharga 20k"
+ayam) echo "You have choosed $makanan,price 20k"
 esac
  
 #Gorengan
- echo "Tersedia gorengan juga"
+ echo "Ready fried food"
 for gorengan in bakwan risol tahu tempe tahu_pedes bakwan_jagung
 do 
  echo "$gorengan"
@@ -53,5 +53,5 @@ tahu_pedes|bakwan_jagung) echo "$pilihan 1000"
 ;;
 esac
 
-echo "Selamat menikmati"
-echo "Harap bayar dengan uang pas"
+echo "Enjoy your food"
+echo "Please pay with cashless"
