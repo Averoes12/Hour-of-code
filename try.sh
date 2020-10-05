@@ -2,29 +2,35 @@
 
 MENIT=`date +%M`
 JAM=`date +%H`
-echo "what's your name ?"
+echo "what's your name?"
 read name 
-echo "Nice to meet you " $name
+
+echo "Nice to meet You" $name
 
 
-echo "Please enter your password :"
+echo "Please Insert Your Password:"
+
 read password
 
 if [ "$password" == "daff" ];
 then
- echo "Correct password"
- echo "You have logged in at $JAM : $MENIT"
+
+ echo "Correct Password"
+ echo "You Are Logged in $JAM : $MENIT"
 else
- echo "Incorrect password"
- echo "Please try again"
+ echo "Incorrect Password"
+ echo "Please Try Again"
 fi
 
- echo "Please choose your menu"
+ echo "Choose Your Menu"
+
 for menu in sate=25k bakso=10k ayam=20k mie=10k;
 do
   echo "$menu";
 done
- echo "Please choose "
+r
+ echo "Please Choose"
+
  read makanan
 
 case $makanan in
@@ -42,7 +48,7 @@ for gorengan in bakwan risol tahu tempe tahu_pedes bakwan_jagung
 do 
  echo "$gorengan"
 done
- echo "Pilih gorengan"
+ echo "Choose gorengan"
  read pilihan
 
 case $gorengan in
@@ -53,5 +59,7 @@ tahu_pedes|bakwan_jagung) echo "$pilihan 1000"
 ;;
 esac
 
-echo "Enjoy your food"
-echo "Please pay with cashless"
+
+echo "Have a nice meal"
+echo "Pay with e-money"
+
